@@ -1,0 +1,220 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@using SdkConectaAccountApi.Models
+@using Microsoft.Extensions.Configuration;
+@using SoouMercWeb.Helpers
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IConfiguration Config
+@{
+    var httpContext = HttpContextAccessor;
+    var config = Config;
+    var servicoUsuario = new ServicoHelperUsuario(config, httpContext);
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOOU VENDAS</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/navbar.css" />
+    <link rel="stylesheet" href="~/css/migalhas.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+    <link rel="icon" type="image/png" href="~/images/logos/faviconsoou.svg" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="top-bar"></div>
+            <a class="hamburguer navbar-brand" href="#" id="sidebarCollapse">
+                <span></span>
+            </a>
+            <div class="logo text-center">
+                <img src="~/images/logos/soouVendasLogo.png" alt="Logo Soou" class="img-fluid d-md-none mb-2" style="max-width: 150px;" /> <!-- Para telas pequenas -->
+                <img src="~/images/logos/soouVendasLogo.png" alt="Logo Soou" class="img-fluid d-none d-md-block ml-md-3" style="max-width: 250px;" /> <!-- Para telas médias e grandes -->
+            </div>
+            <ul class="navbar-nav ml-auto mt2 mt-lg-0">
+                <li class="dropdown" style="color: white; ">
+                    <a class="dropdown-toggle" id="link-aplicacoes" data-toggle="dropdown">
+                        <div class="circle-icon">
+
+                            <span class="dropdown fas fa-ellipsis-h mr-4 mt-2" data-toggle="tooltip" title="Aplicações" style="cursor: pointer; font-size: 20px;"></span>
+
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" id="aplicacoes-navbar" role="menu">
+                        <div class="div-aplicacoes">
+                            @foreach (var aplicacao in servicoUsuario.ListaAplicacoesUsuarios.OrderBy(a => a.Nome))
+                            {
+
+                                var aplicacaoativa = aplicacao.Nome?.ToLower() == "merc" ? "aplicacao-ativa" : "";
+
+
+                                switch (aplicacao.Nome)
+                                {
+                                    case "Maboo":
+                                        <a href="@aplicacao.UrlAplicacao" target="_@(aplicacao.Nome != null && aplicacao.Nome.ToLower().Contains("chat") ? aplicacao.Nome.ToLower() : "blank")_">
+                                            <div class="divLogos @aplicacaoativa">
+                                                <img id="erp" class="app" src="~/images/erpLogo.png">
+                                            </div>
+                                        </a>
+                                        break;
+                                    case "Conectado":
+                                        for (int i = 0; i < 2; i++)
+                                        {
+                                            <a href="@aplicacao.UrlAplicacao" target="_@(aplicacao.Nome != null && aplicacao.Nome.ToLower().Contains("chat") ? aplicacao.Nome.ToLower() : "blank")_">
+                                                @if (i == 0)
+                                                {
+                                                    <div class="divLogos @aplicacaoativa">
+                                                        <img class="app" src="~/images/projetosRoxo.png">
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <div class="divLogos @aplicacaoativa">
+                                                        <img class="app" src="~/images/processos.png">
+                                                    </div>
+                                                }
+                                            </a>
+                                        }
+                                        break;
+                                    case "Miki":
+                                        <a href="@aplicacao.UrlAplicacao" target="_@(aplicacao.Nome != null && aplicacao.Nome.ToLower().Contains("chat") ? aplicacao.Nome.ToLower() : "blank")_">
+                                            <div class="divLogos @aplicacaoativa">
+                                                <img id="erp" class="app" src="/images/wiki.png">
+                                            </div>
+                                        </a>
+                                        break;
+                                    case "Merc":
+                                        <a href="@aplicacao.UrlAplicacao" target="_@(aplicacao.Nome != null && aplicacao.Nome.ToLower().Contains("chat") ? aplicacao.Nome.ToLower() : "blank")_">
+                                            <div class="divLogos @aplicacaoativa">
+                                                <img id="erp" class="app" src="/images/soouVendas.png">
+                                            </div>
+                                        </a>
+                                        break;
+                                    case "Sou":
+                                        <hr>
+                                        <a href="@aplicacao.UrlAplicacao" target="_@(aplicacao.Nome != null && aplicacao.Nome.ToLower().Contains("chat") ? aplicacao.Nome.ToLower() : "blank")_">
+                                            <div class="divLogos @aplicacaoativa">
+                                                <h4 id="plataformaSoou">Plataforma SOOU</h4>
+                                            </div>
+                                        </a>
+                                        break;
+                                }
+                            }
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown mr-4" style="color: white">
+                    <a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer">
+                        @if (!string.IsNullOrWhiteSpace(servicoUsuario.UsuarioLogado.ImagemBase64) && !string.IsNullOrWhiteSpace(servicoUsuario.UsuarioLogado.TipoImagemBase64))
+                        {
+                            <div class="foto-user foto-user-pequena" style="vertical-align: middle;background-image: url('data:image/@servicoUsuario.UsuarioLogado.TipoImagemBase64;base64, @servicoUsuario.UsuarioLogado.ImagemBase64')">
+                            </div>
+                        }
+                        else
+                        {
+                            <span style="vertical-align: middle;position: relative;right: 9px"><i class="fas fa-user-circle fa-2x"></i></span>
+                        }
+                        <span style="vertical-align: middle;">@(servicoUsuario.UsuarioLogado.Apelido != null ? servicoUsuario.UsuarioLogado.Apelido : servicoUsuario.UsuarioLogado.Nome)</span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-right" style="margin-top: 10px;">
+
+                        <li>
+                            <div class="navbar-login" id="meuperfil">
+
+                                <div class="container-user row">
+                                    <div class="col-lg-4 panel-foto-user">
+                                        @if (!string.IsNullOrWhiteSpace(servicoUsuario.UsuarioLogado.ImagemBase64) && !string.IsNullOrWhiteSpace(servicoUsuario.UsuarioLogado.TipoImagemBase64))
+                                        {
+                                            <div class="foto-user foto-user-media"
+                                                 style="background-image: url('data:image/@servicoUsuario.UsuarioLogado.TipoImagemBase64;base64, @servicoUsuario.UsuarioLogado.ImagemBase64')">
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <span style="vertical-align: middle;position: relative;right: 9px"><i class="fas fa-user-circle fa-2x"></i></span>
+                                        }
+                                    </div>
+                                    <div class="col-lg-8 panel-dados-user">
+                                        <strong class="breakline">@servicoUsuario.UsuarioLogado.Nome</strong>
+                                        <br>
+                                        <span class="small">@servicoUsuario.UsuarioLogado.Email</span>
+                                    </div>
+                                </div>
+                                 <div class="row container-icon">
+
+                                <a class="item-panel-user col-4" href="" style="text-decoration: none;">
+                                    <span class="fa fa-hammer" style="margin-bottom: 10px"></span>
+                                    <br>
+                                    <span class="hvr-underline-from-center">Admin</span>
+                                    <br>
+                                    <br>
+                                </a>
+  
+                                <a class="item-panel-user col-4" href="" style="text-decoration: none;">
+                                    <span class="fa fa-cogs" style="margin-bottom: 10px"></span>
+                                    <br>
+                                    <span class="hvr-underline-from-center" style="margin-left: -13px;">Gerenciamento</span>
+                                    <br>
+                                    <br>
+                                </a>
+
+
+                            <a class="item-panel-user col-4" href="" style="text-decoration: none;">
+                                <span class="fas fa-user" style="margin-bottom: 10px"></span>
+                                <br>
+                                <span class="hvr-underline-from-center">Meu Perfil</span>
+                                <br>
+                                <br>
+                            </a>
+
+                        </div>
+                                <div class="botaosair">
+                                    <a href="/Login/Logoff" style="text-decoration: none;">
+                                        <div class="btn-logoff">
+                                            <i class="fa fa-power-off"></i>
+                                            <span>Sair</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    @RenderSection("migalhas", required: false)
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div id="sidebar">
+        <ul class="list-group">
+            <li class="list-group-item">Item 1</li>
+            <li class="list-group-item submenu">
+                Submenu 1
+                <ul>
+                    <li class="list-group-item">Subitem 1</li>
+                    <li class="list-group-item">Subitem 2</li>
+                </ul>
+            </li>
+            <li class="list-group-item">Item 2</li>
+        </ul>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

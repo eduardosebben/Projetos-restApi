@@ -1,0 +1,1469 @@
+﻿{
+   "CodeGenerationMode": 3,
+   "ContextClassName": "ErpContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "",
+   "OutputPath": "Entities",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "Relatorios.Dominio.Entities",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[APP_IFOOD_AUTORIZACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[APP_IFOOD_EVENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[APP_IFOOD_PEDIDO_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[APP_IFOOD_PEDIDOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[APP_IFOOD_TOKEN]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CA_ABERTURA_FECHAMENTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CA_MOVIMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CA_PARAMETROS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CA_TIPOS_MOVIMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_CONFIGURADOR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_CONFIGURADOR_VERSOES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_INVENTARIO_SPED]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_INVENTARIO_SPED_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_INVENTARIOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_INVENTARIOS_PRODUTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_INVENTARIOS_PRODUTOS_HISTORICOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_ITENS_NOTAS_ORDENS_ATENDIDAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_MOVIMENTOS_ESTOQUES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_NOTA_AVISOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_NOTAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_NOTAS_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_NOTAS_MENSAGENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_NOTAS_PENDENCIAS_FORNECEDOR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_NOTAS_PENDENCIAS_PRODUTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_NOTAS_PENDENCIAS_TRANSPORTADOR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_NOTAS_RELACAO_ENTRADAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_NOTAS_RELACAO_ENTRADAS_RATEIOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_NOTAS_RELACAO_SAIDAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_NOTAS_XML]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PARAMETROS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTO_ALMOXARIFADOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTO_BARRAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTO_COMPOSICAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTO_CONVERSAO_UNIDADES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTO_TRIBUTACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTOS_CONFIGURADOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTOS_FCI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTOS_FORNECEDORES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTOS_IMAGENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTOS_ISET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTOS_LOTES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTOS_SERIES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTOS_TRAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTOS_VALORES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CE_PRODUTOS_VENDAS_EMPRESAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CO_APROVADORES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CO_LOGS_STATUS_ORDENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CO_ORDENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CO_ORDENS_APROVADORES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CO_ORDENS_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CO_ORDENS_MENSAGENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CO_ORDENS_PAGAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CO_PARAMETROS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CO_REGRAS_APROVADORES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CO_REGRAS_APROVADORES_USUARIOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CO_STATUS_CONFIGURACOES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CP_HISTORICO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CP_PARAMETROS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CP_TITULOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CP_TITULOS_LANCAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_CONTAS_BANCARIAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_CONVENIOS_BANCARIOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_HISTORICOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_PARAMETROS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_REMESSA_OPEN_BANK]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_RETORNO_HISTORICO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_SALDOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_TITULOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_TITULOS_ALTERACAO_REMESSA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_TITULOS_BOLETOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_TITULOS_COMISSOES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[CR_TITULOS_LANCAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_DEVOLUCOES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_FATURA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_FATURA_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_FATURA_TITULOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_FATURAS_NAO_GERADAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_LIBERACAO_MARGEM_MINIMA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_MANIFESTO_DESTINATARIO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_MDFE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_MDFE_CARREGAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_MDFE_CONDUTOR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_MDFE_EVENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_MDFE_NFE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_MDFE_PERCURSO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_MDFE_REBOQUE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_MDFE_SEGURO_CARGA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_MDFE_XML_ENVIADAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NFSE_XML_ENVIADAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NFSE_XML_RETORNO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_CARTA_CORRECAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_INUTILIZADAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_ITENS_COMISSAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_ITENS_EXPORTACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_ITENS_IMPORTACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_ITENS_IMPORTACAO_ADICAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_MENSAGENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_PAGAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_PEDIDOS_REFERENCIADAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_REFERENCIADAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_REPRESENTANTES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_XML]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NOTAS_XML_ENVIADAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_NUMERO_NOTAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_PARAMETROS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_PARAMETROS_FORNECEDORES_MANIFESTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_PEDIDOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_PEDIDOS_HISTORICOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_PEDIDOS_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_PEDIDOS_ITENS_COMISSAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_PEDIDOS_MENSAGENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_PEDIDOS_NOTAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_PEDIDOS_PAGAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_PEDIDOS_REPRESENTANTES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_RETENCAO_IR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[FT_RETENCAO_PISCOFINS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE__ALERTAS_PROCESSOS_FILTROS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ADMINISTRADORES_ORGANIZACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ADMINISTRADORES_ORGANIZACAO_EMPRESAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ALERTAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ALERTAS_PROCESSOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ALERTAS_PROCESSOS_EMAILS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ALERTAS_PROCESSOS_HISTORICOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ALERTAS_PROCESSOS_PESSOAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ALERTAS_USUARIO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ALMOXARIFADOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ANEXOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ANEXOS_EMAIL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ANOTACOES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ANOTACOES_ANEXO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ANOTACOES_USUARIO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_APLICACAO_EXTERNA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_AREA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_BANCOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CADASTRO_FRENTE_CAIXA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CALENDARIO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CALENDARIO_FERIADO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CARGOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CATEGORIAS_CONSULTAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CATEGORIAS_PRODUTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CENTRO_CUSTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CERTIFICADO_DIGITAL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CHAT]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CIDADES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CLASSIFICACAO_COMPONENTES_DASHBOARD]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CLASSIFICACAO_FISCAL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CLASSIFICACOES_PRODUTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_COLABORACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_COLABORACAO_CURTIDAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_COLABORACAO_DESTINATARIO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_COMENTARIOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_COMPARTILHAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_COMPONENTES_DASHBOARD]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_COMPONENTES_PERMISSOES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONDICAO_PAGAMENTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONDICAO_PAGAMENTO_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONDUTORES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONFIG_INTEGRACAO_BIMACHINE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONFIG_INTEGRACAO_ISET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONFIG_INTEGRACAO_TRAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONFIG_PAG_PIX]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONFIG_SERVICOS_TRAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONFIGURACAO_ALMOXARIFADO_ISET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONFIGURACAO_ALMOXARIFADOS_TRAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONFIGURACAO_MODELO_PEDIDO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONSULTAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONSULTAS_CONFIGURADAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONSULTAS_CONFIGURADAS_CAMPOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONTA_EMAIL_PROCESSOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONTAS_CONTABEIS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_CONTAS_EMAIL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_DASHBOARD]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_DASHBOARD_CONFIGURACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_DRE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_EMAILS_ENVIADOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_EMAILS_SPED_FISCAL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_EMPRESAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_EMPRESAS_PADRAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_EMPRESAS_UF]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ETIQUETAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_FAVORITOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_FILA_PARAMETROS_SPED_FISCAL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_FILA_SPED_FISCAL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_GESTAO_COMPARTILHAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_GESTAO_COMPARTILHAMENTOS_PROCESSOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_GESTAO_COMPARTILHAMENTOS_PROCESSOS_PERMISSOES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_HABILIDADES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_HORARIO_TRABALHO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_HORARIO_TRABALHO_TURNOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_IBPT]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_INDICES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_INDICES_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_INTERMEDIADOR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_INTREGRACAO_WHATSAPP]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_LISTA_PRECOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_LISTA_PRECOS_PRODUTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_LOCALIZACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_LOGS_COMPARTILHAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_MARCAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_MENSAGEM_PADRAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_MENSAGENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_OPERACAO_FISCAL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_OPERACAO_FISCAL_MENSAGENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_OPERADORAS_CARTAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_ORGANIZACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_PAPEL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_PARAMETROS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_PARAMETROS_SPED]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_POSICAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_PROGRAMA_FIDELIDADE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_PROMOCOES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_PROMOCOES_CATEGORIAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_PROMOCOES_CLASSIFICACOES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_PROMOCOES_MARCAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_PROMOCOES_PRODUTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_PROPRIETARIO_VEICULOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_REGRAS_TRIBUTACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_REGRAS_TRIBUTACAO_XML_ENTRADA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_RELACAO_OPERADORAS_TIPO_PAGAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_RELACOES_LISTAS_PRECOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_SEGURADORAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_TIPO_COMPARTILHAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_TIPO_ENDERECO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_TIPO_PAGAMENTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_TIPO_TELEFONE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_TIPO_TITULO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_TIPOS_ALERTA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_TIPOS_PAGAMENTOS_CONDICOES_PAGAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_UNIDADE_MEDIDA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_USUARIO_EMPRESA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_USUARIO_HABILIDADE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_USUARIO_ORGANIZACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_USUARIO_PAPEL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_USUARIO_POSICAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_USUARIOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_USUARIOS_COMPARTILHADOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[GE_VEICULOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[OS_ORDEM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[OS_ORDEM_MATERIAIS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[OS_ORDEM_SERVICO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[OS_PARAMETROS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[OS_STATUS_ORDEM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[OS_TECNICOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[OS_TIPOS_ORDEM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_CANAL_VENDAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_CLIENTES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_CLIENTES_VENCIMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_CONTATOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_CONTATOS_PROCESSOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_CONTATOS_PROCESSOS_CONECTADO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_CONTRATOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_CONTRATOS_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_CONTRATOS_REAJUSTES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_ENDERECOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_FISICAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_LANCAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_LANCAMENTOS_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_LANCAMENTOS_VENCIMENTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_PESSOAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_RAMOS_ATIVIDADES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_REPRESENTANTES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_TELEFONES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_TELEFONES_CONTATOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[PS_TELEFONES_PESSOAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_BANCOS_HOMOLOGADOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CEST]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CFOP]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CHAVES_UNICAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CLASSIF_ESTABELECIMENTO_SPED]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CLIENTES_PEDIDOS_ISET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CLIENTES_PEDIDOS_TRAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CNAE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_COMPOSICAO_LISTA_PRECOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CONTAS_DRE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CST_COFINS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CST_ICMS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CST_IPI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CST_PIS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CTE_EMITENTE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CTE_SITUACAO_DOCUMENTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CTE_TIPO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_CTE_TIPO_OPERACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_EMAILS_ALERTAS_ISET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_EMAILS_ALERTAS_TRAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_EMPRESAS_FILA_MANIFESTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_ENQUADRAMENTO_IPI]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_ENTIDADES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_ENTIDADES_ATRIBUTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_ENTIDADES_ATRIBUTOS_CHAVE_UNICA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_ERROS_APLICACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_FILA_MANIFESTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_FINALIDADE_EMISSAO_NOTA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_FORMA_IMPORTACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_FUNCOES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_INTEGRADOR_BANCARIO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_INTEGRADORES_BANCARIOS_BANCOS_HOMOLOGADOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_LINGUAGEM]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_LOCAL_DESTINO_OPERACAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_LOG_ACESSO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_LOG_ACESSO_TELA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_LOG_ALTERACAO_TABELAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_LOG_ATRIBUTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_LOG_REGISTROS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_MENU]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_MODALIDADES_FRETE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_MODELO_NOTA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_MODELO_PEDIDO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_NATUREZA_FRETE_CTE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_OCORRENCIAS_BANCARIAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_OPERADORAS_CARTAO_SEFAZ]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_ORIGEM_MERCADORIAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_ORIGEM_PEDIDO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PAGAMENTOS_PEDIDOS_ISET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PAGAMENTOS_PEDIDOS_TRAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PAISES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PEDIDOS_ISET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PEDIDOS_ISET_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PEDIDOS_TRAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PEDIDOS_TRAY_ITENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PERMISSOES_FUNCAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PERMISSOES_USUARIO_PDV]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PRESENCA_COMPRADOR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PROCESSOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PROCESSOS_FIFO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_PROGRAMA_FIDELIDADE]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_RELACAO_PAGAMENTO_ISET]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_RELACAO_PAGAMENTO_TRAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_RELACAO_TIPO_PAGAMENTO_TRAY]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_STATUS_ORDENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_STATUS_PEDIDO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPO_CARROCERIA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPO_CERTIFICADO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPO_COMPONENTES]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPO_DE_CONSULTAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPO_GENERO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPO_ITEM_SPED]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPO_MENSAGENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPO_PROPRIETARIO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPO_RODADO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPO_SERVICO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPO_TRANSPORTADOR]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPOS_AGRUPAMENTO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPOS_ALERTAS_PROCESSOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPOS_BARRAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPOS_DOCUMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPOS_FUNCAO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPOS_NOTAS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPOS_PAGAMENTOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_TIPOS_REGRAS_ORDENS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_UF]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_USUARIOS_LOGADOS]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_VERSAO_DE_SISTEMA]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_VERSOES_SPED_FISCAL]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[SW_VIA_TRANSPORTE]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": true,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": true,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": true,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

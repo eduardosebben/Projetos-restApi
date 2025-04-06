@@ -1,0 +1,38 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    @if (isButtonVisible)
+    {
+        <div class="sidebar">
+            <NavMenu OnToggleVisibility="@ToggleVisibility" IsButtonVisible="@isButtonVisible" />
+        </div>
+    }
+    else
+    {
+        <div class="sidebar2">
+            <NavMenu OnToggleVisibility="@ToggleVisibility" IsButtonVisible="@isButtonVisible" />
+        </div>
+    }
+    <main class="marginTop">
+        <div class="col-md-12">
+            @if (isButtonVisible)
+            {
+                @Body
+            }
+            else
+            {
+                <Login OnToggleVisibility="@ToggleVisibility" />
+            }
+        </div>
+    </main>
+</div>
+@code {
+    private bool isButtonVisible = false;
+
+    private void ToggleVisibility()
+    {
+        isButtonVisible = !isButtonVisible;
+        StateHasChanged();
+    }
+}
+

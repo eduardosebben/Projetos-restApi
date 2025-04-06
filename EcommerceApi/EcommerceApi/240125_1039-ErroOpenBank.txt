@@ -1,0 +1,3 @@
+
+JSON: {"access_token":"APP_USR-6629908465808899-012409-f466e67216bb7aa0b103f604de317be4-2226464122","token_type":"Bearer","expires_in":21600,"scope":"offline_access read write","user_id":2226464122,"refresh_token":"TG-679398235d79250001662312-2226464122"}  
+Chamada: 

@@ -1,0 +1,1 @@
+C:\Users\dudus\Source\Workspaces\SOOU Erp Dashboard\Soou Erp Dashboard\Soou_Erp_DashBoard\Soou_Erp_DashBoard.csproj;x64

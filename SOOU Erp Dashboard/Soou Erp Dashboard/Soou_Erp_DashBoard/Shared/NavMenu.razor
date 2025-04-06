@@ -1,0 +1,70 @@
+﻿@inject NavigationManager navigation
+@using System;
+@using System.Diagnostics
+
+<div class="row top-row navbar navbar-dark">
+    <div class="container-fluid">
+        @if (@IsButtonVisible)
+        {
+            <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        }
+        <a class="navbar-brand" style="text-align:left;" href="">Soou Erp</a>
+@*         @if (@IsButtonVisible)
+        {
+            <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        } *@
+
+
+        @if (@IsButtonVisible)
+        {
+            <img class="img-fluid rounded-circle" style="width: 40px; height: 40px; object-fit: cover;" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&crop=faces&fit=crop&h=128&w=128" alt="">
+        }
+    </div>
+</div>
+@if (@IsButtonVisible)
+{
+    <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+        <nav class="flex-column">
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="">
+                    <span class="oi oi-home" aria-hidden="true"></span> DashBord
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="vendas">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Vendas
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" @onclick="EscondeDropdown" href="Login" Match="NavLinkMatch.All">
+                    <span class="oi oi-account-logout" aria-hidden="true"></span> Sair
+                </NavLink>
+            </div>
+        </nav>
+    </div>
+}
+@code {
+    [Parameter]
+    public bool IsButtonVisible { get; set; }
+    
+    [Parameter]
+    public Action OnToggleVisibility { get; set; }
+
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+    private void EscondeDropdown()
+    {
+        IsButtonVisible = false;
+        OnToggleVisibility?.Invoke();
+    }
+}

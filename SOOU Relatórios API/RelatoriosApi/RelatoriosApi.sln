@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelatoriosApi", "RelatoriosApi\RelatoriosApi.csproj", "{6C8C1736-D748-4CB9-9E6A-E0105DEC9B38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Relatorios.Dominio", "Relatorios.Dominio\Relatorios.Dominio.csproj", "{252A771D-9FEE-4574-B828-D08E49E58EEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Relatorios.Infraestrutura", "Relatorios.Infraestrutura\Relatorios.Infraestrutura.csproj", "{48B6E6A3-837D-42FA-806C-7CA564A55B4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Relatorios.Aplication", "Relatorios.Aplication\Relatorios.Aplication.csproj", "{770D8F10-EECF-472C-B288-F4B39C8B2A85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoouCommon", "SoouCommon\SoouCommon.csproj", "{A13C586C-3FDE-49A0-BDB1-D7667EFD5531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documentos", "Documentos\Documentos.csproj", "{AC2671F5-835B-4B4A-94F0-1CD2140F3FD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C8C1736-D748-4CB9-9E6A-E0105DEC9B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8C1736-D748-4CB9-9E6A-E0105DEC9B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8C1736-D748-4CB9-9E6A-E0105DEC9B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8C1736-D748-4CB9-9E6A-E0105DEC9B38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{252A771D-9FEE-4574-B828-D08E49E58EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{252A771D-9FEE-4574-B828-D08E49E58EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{252A771D-9FEE-4574-B828-D08E49E58EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{252A771D-9FEE-4574-B828-D08E49E58EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48B6E6A3-837D-42FA-806C-7CA564A55B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B6E6A3-837D-42FA-806C-7CA564A55B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B6E6A3-837D-42FA-806C-7CA564A55B4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B6E6A3-837D-42FA-806C-7CA564A55B4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{770D8F10-EECF-472C-B288-F4B39C8B2A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{770D8F10-EECF-472C-B288-F4B39C8B2A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{770D8F10-EECF-472C-B288-F4B39C8B2A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{770D8F10-EECF-472C-B288-F4B39C8B2A85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13C586C-3FDE-49A0-BDB1-D7667EFD5531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13C586C-3FDE-49A0-BDB1-D7667EFD5531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13C586C-3FDE-49A0-BDB1-D7667EFD5531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13C586C-3FDE-49A0-BDB1-D7667EFD5531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2671F5-835B-4B4A-94F0-1CD2140F3FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2671F5-835B-4B4A-94F0-1CD2140F3FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2671F5-835B-4B4A-94F0-1CD2140F3FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2671F5-835B-4B4A-94F0-1CD2140F3FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EC130E8-6D0E-4608-9E70-CF69E610B093}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/conectasoftwares
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Relatorios.Aplication\\Relatorios.Aplication.csproj
+		SccProjectName1 = Relatorios.Aplication
+		SccLocalPath1 = Relatorios.Aplication
+		SccProjectUniqueName2 = Relatorios.Dominio\\Relatorios.Dominio.csproj
+		SccProjectName2 = Relatorios.Dominio
+		SccLocalPath2 = Relatorios.Dominio
+		SccProjectUniqueName3 = Relatorios.Infraestrutura\\Relatorios.Infraestrutura.csproj
+		SccProjectName3 = Relatorios.Infraestrutura
+		SccLocalPath3 = Relatorios.Infraestrutura
+		SccProjectUniqueName4 = RelatoriosApi\\RelatoriosApi.csproj
+		SccProjectName4 = RelatoriosApi
+		SccLocalPath4 = RelatoriosApi
+		SccProjectUniqueName5 = SoouCommon\\SoouCommon.csproj
+		SccProjectName5 = SoouCommon
+		SccLocalPath5 = SoouCommon
+		SccProjectUniqueName6 = Documentos\\Documentos.csproj
+		SccProjectName6 = Documentos
+		SccLocalPath6 = Documentos
+	EndGlobalSection
+EndGlobal

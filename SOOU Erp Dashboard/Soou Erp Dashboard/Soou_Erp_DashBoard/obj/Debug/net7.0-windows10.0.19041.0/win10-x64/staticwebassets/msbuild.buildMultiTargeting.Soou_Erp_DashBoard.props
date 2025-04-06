@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Soou_Erp_DashBoard.props" />
+</Project>
